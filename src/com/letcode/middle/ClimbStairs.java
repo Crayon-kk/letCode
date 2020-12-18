@@ -25,6 +25,7 @@ public class ClimbStairs {
 
     }
 
+    //递归方式爬楼
     public static int climbStairs(int n) {
         if (n == 1) {
             return 1;
