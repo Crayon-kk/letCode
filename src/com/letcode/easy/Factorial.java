@@ -6,7 +6,7 @@ package com.letcode.easy;
 public class Factorial {
 
     public static void main(String[] args) {
-        int factorial = factorial(3);
+        int factorial = factorial(10);
         System.out.println(factorial);
     }
 
