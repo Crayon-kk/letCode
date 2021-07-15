@@ -25,7 +25,7 @@ public class SqrtTest {
                 right = mid;
             } else {
                 if (left == mid) {
-                    return left;
+                    break;
                 }
                 left = mid;
             }
