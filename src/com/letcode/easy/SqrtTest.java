@@ -9,7 +9,7 @@ package com.letcode.easy;
 public class SqrtTest {
 
     public static void main(String[] args) {
-        int x = 10;
+        int x = 2;
         System.out.println(sqrt(x));
     }
 
@@ -21,15 +21,31 @@ public class SqrtTest {
         }
         while (left < right) {
             mid = (left + right) / 2;
-            if (mid > x / mid) {
+            //说明在左边
+            if (mid * mid > x) {
                 right = mid;
-            } else {
+            }
+            //在右边
+            else {
                 if (left == mid) {
-                    return left;
+                    break;
                 }
                 left = mid;
             }
         }
+
+
+//        while (left < right) {
+//            mid = (left + right) / 2;
+//            if (mid > x / mid) {
+//                right = mid;
+//            } else {
+//                if (left == mid) {
+//                    break;
+//                }
+//                left = mid;
+//            }
+//        }
         return left;
     }
 
